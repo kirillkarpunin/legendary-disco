@@ -156,6 +156,8 @@ bool HashTable::is_full() {
 }
 
 void HashTable::clear() {
+    if (size == 0) return;
+
     for (int i = 0; i < capacity; i++){
         if (hash_table[i]){
             hash_table[i]->is_deleted = true;
