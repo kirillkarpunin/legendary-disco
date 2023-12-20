@@ -26,7 +26,7 @@ TEST(create, negative_size){
     EXPECT_ANY_THROW(HashTable ht(-10));
 }
 
-TEST(insert, standart){
+TEST(insert, standard){
     HashTable ht(10);
 
     ht.insert("a", 1);
@@ -81,7 +81,7 @@ TEST(remove, empty_table){
     EXPECT_ANY_THROW(ht.remove("a"));
 }
 
-TEST(remove, standart){
+TEST(remove, standard){
     HashTable ht(5);
 
     ht.insert("a", 1);
